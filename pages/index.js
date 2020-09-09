@@ -1,9 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from "next/link"
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <nav>
+            <Link to="/" href="/">Home</Link>{" "}
+            <Link to="/about" href="/about">About-Us</Link>{" "}
+            <Link to="/contact" href="/contact">Contact-Us</Link>
+        </nav>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
